@@ -139,10 +139,11 @@
 
   /* swipe hint overlay on cover */
   .hint{position:absolute;z-index:20;left:0;right:0;bottom:96px;display:flex;flex-direction:column;
-    align-items:center;gap:6px;color:var(--purple);font-weight:800;letter-spacing:.4px;pointer-events:none;
+    align-items:center;gap:6px;color:#fff;font-weight:800;letter-spacing:.4px;pointer-events:none;
+    text-shadow:0 1px 6px rgba(75,47,160,.45);
     transition:opacity .4s;font-size:14px;}
   .hint.hide{opacity:0;}
-  .hand{font-size:26px;animation:swipe 1.6s ease-in-out infinite;}
+  .hand{font-size:26px;font-weight:300;animation:swipe 1.6s ease-in-out infinite;}
   @keyframes swipe{0%,100%{transform:translateX(10px);opacity:.4;}50%{transform:translateX(-10px);opacity:1;}}
 
   .pageno{position:fixed;top:calc(12px + env(safe-area-inset-top));right:14px;z-index:50;
@@ -184,7 +185,7 @@
         We hope you have an amazing time :D
       </div>
     </div>
-    <div class="hint" id="hint"><span class="hand">&#128072;</span>Swipe to open</div>
+    <div class="hint" id="hint"><span class="hand">&#8594;</span>Swipe to open</div>
   </section>
 
   <!-- ===== PANEL 2 · WELCOME ===== -->
@@ -246,7 +247,7 @@
         <li><span class="song">Song</span> by School<br>Members</li>
         <li><span class="song">Song</span> by School<br>Members</li>
         <li><span class="song">Song</span> by School<br>Members</li>
-        <li><span class="song">Song &ndash; Group</span> by Los Altos High School<span class="cast">Alice, Lauren</span></li>
+        <li><span class="song">Song</span> by Los Altos High School<span class="cast">Alice, Lauren</span></li>
         <li><span class="song">Song</span> by School<br>Members</li>
         <li><span class="song">Song</span> by School<br>Members</li>
         <li><span class="song">Deja Vu</span> by The King&rsquo;s Academy<span class="cast">Abigail, Dayeon, Giovann, Henry, Zachary</span></li>
