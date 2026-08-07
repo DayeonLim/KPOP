@@ -154,8 +154,8 @@
     border:2px dashed var(--purple-dk);display:flex;align-items:center;justify-content:center;
     font-size:24px;opacity:.8;}
 
-  /* real square photo, fixed size so it doesn't blow up with tall notes */
-  .note-photo{width:72px;height:72px;flex:0 0 72px;align-self:center;
+  /* real square photo, scales with the note but capped so it can't blow up */
+  .note-photo{aspect-ratio:1/1;height:auto;max-height:90px;align-self:stretch;flex:0 0 auto;
     object-fit:cover;border-radius:10px;box-shadow:0 3px 8px rgba(60,40,90,.22);
     background:#eadff9;}
 
