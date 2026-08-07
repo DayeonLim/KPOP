@@ -148,6 +148,12 @@
   .note b{color:var(--purple-dk);font-weight:800;}
   .note .sch{font-style:italic;opacity:.8;font-weight:400;}
 
+  /* small selfie placeholder square */
+  .selfie-slot{float:right;width:72px;height:72px;border-radius:10px;margin:0 0 6px 10px;
+    background:repeating-linear-gradient(45deg,#fff 0 6px,var(--blue-lt) 6px 12px);
+    border:2px dashed var(--purple-dk);display:flex;align-items:center;justify-content:center;
+    font-size:24px;opacity:.8;}
+
   /* cover date tag */
   .datetag{margin-top:18px;align-self:center;background:#fff;border:3px dashed var(--pink);
     border-radius:14px;padding:12px 22px;text-align:center;transform:rotate(-1.5deg);
@@ -297,21 +303,8 @@
       <h2 class="head">welcome!</h2>
       <p class="hand" style="font-size:clamp(16px,4.6vw,20px);margin:0 0 14px;">to our k-pop dance night ♡</p>
 
-      <div class="pola" style="transform:rotate(2.5deg);margin-bottom:22px;">
-        <span class="tape y tl"></span><span class="tape tr"></span>
-        <img src="us.png" alt="" style="aspect-ratio:16/9;" onerror="this.style.opacity=0;">
-        <div class="cap">the crew ✦</div>
-      </div>
-
-      <div class="pola" style="max-width:82%;transform:rotate(-2deg);margin:0 auto 20px;">
-        <span class="tape tl"></span><span class="tape b tr"></span>
-        <img src="us.png" alt="the organizers" onerror="this.closest('.pola').style.display='none';">
-        <div class="cap">us ♡</div>
-      </div>
-
       <div class="note lilac" style="transform:rotate(-1deg);margin-bottom:16px;">
-        <span class="note-title">organizers</span>
-        <img src="us.png" alt="" style="height:26px;width:auto;vertical-align:middle;margin:0 0 6px 8px;border-radius:4px;" onerror="this.style.display='none';"><br>
+        <span class="note-title">organizers</span><br>
         <b>Dayeon Lim</b> <span class="sch">– The King&rsquo;s Academy</span><br>
         <b>Lauren Lee</b> <span class="sch">– Los Altos High School</span><br>
         <b>Alice Kwak</b> <span class="sch">– Los Altos High School</span><br>
@@ -319,6 +312,7 @@
       </div>
 
       <div class="note blue" style="transform:rotate(1.2deg);margin-bottom:16px;">
+        <span class="selfie-slot">📷</span>
         <span class="note-title">mc</span><br>
         <b>Audrey Wang</b> <span class="sch">– The King&rsquo;s Academy</span>
       </div>
