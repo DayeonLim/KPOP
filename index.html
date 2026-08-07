@@ -154,11 +154,6 @@
     border:2px dashed var(--purple-dk);display:flex;align-items:center;justify-content:center;
     font-size:24px;opacity:.8;}
 
-  /* real square photo, scales with the note but capped so it can't blow up */
-  .note-photo{aspect-ratio:1/1;height:auto;max-height:90px;align-self:stretch;flex:0 0 auto;
-    object-fit:cover;border-radius:10px;box-shadow:0 3px 8px rgba(60,40,90,.22);
-    background:#eadff9;}
-
   /* cover date tag */
   .datetag{margin-top:18px;align-self:center;background:#fff;border:3px dashed var(--pink);
     border-radius:14px;padding:12px 22px;text-align:center;transform:rotate(-1.5deg);
@@ -218,7 +213,7 @@
     transform:translateY(-50%);font-size:18px;}
   .prizes .grp{font-family:var(--f-display);font-weight:400;
     color:var(--purple-dk);font-size:clamp(14px,4vw,16px);}
-  .prizes .ver{color:var(--pink);font-weight:900;}
+  .prizes .ver{color:var(--pink);font-weight:400;}
 
   .foot-note{font-family:var(--f-script);text-align:center;
     font-size:clamp(17px,5vw,21px);color:var(--purple-dk);margin-top:14px;}
@@ -307,15 +302,18 @@
       <h2 class="head">welcome!</h2>
       <p class="hand" style="font-size:clamp(16px,4.6vw,20px);margin:0 0 14px;">to our k-pop dance night ♡</p>
 
-      <div class="note lilac" style="transform:rotate(-1deg);margin-bottom:16px;display:flex;align-items:stretch;justify-content:space-between;gap:12px;">
-        <div>
-          <span class="note-title">organizers</span><br>
-          <b>Dayeon Lim</b> <span class="sch">– The King&rsquo;s Academy</span><br>
-          <b>Lauren Lee</b> <span class="sch">– Los Altos High School</span><br>
-          <b>Alice Kwak</b> <span class="sch">– Los Altos High School</span><br>
-          <b>Heeseo Lee</b> <span class="sch">– Palo Alto High School</span>
-        </div>
-        <img src="us.png" alt="us" class="note-photo" onerror="this.style.display='none';">
+      <div class="pola" style="transform:rotate(2.5deg);margin-bottom:22px;">
+        <span class="tape y tl"></span><span class="tape tr"></span>
+        <img src="us.png" alt="" style="aspect-ratio:16/9;" onerror="this.style.opacity=0;">
+        <div class="cap">our crew ☆</div>
+      </div>
+
+      <div class="note lilac" style="transform:rotate(-1deg);margin-bottom:16px;">
+        <span class="note-title">organizers</span><br>
+        <b>Dayeon Lim</b> <span class="sch">– The King&rsquo;s Academy</span><br>
+        <b>Lauren Lee</b> <span class="sch">– Los Altos High School</span><br>
+        <b>Alice Kwak</b> <span class="sch">– Los Altos High School</span><br>
+        <b>Heeseo Lee</b> <span class="sch">– Palo Alto High School</span>
       </div>
 
       <div class="note blue" style="transform:rotate(1.2deg);margin-bottom:16px;">
